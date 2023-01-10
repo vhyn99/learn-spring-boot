@@ -11,12 +11,14 @@ import java.util.List;
 public class CourseController {
 
     @RequestMapping("/courses")
-    public List<Course> retrieveAllCourses(){
+    public List<Course> retrieveAllCourses() {
         return Arrays.asList(
-          new Course(1, "Learn AWS", "ima"),
+                new Course(1, "Learn AWS", "ima"),
                 new Course(2, "AWS", "kallen"),
-                new Course(3, "28 minutes", "sinag")
+                new Course(3, "28 minutes", "sinag"),
+                new Course(4, "28 minutes later", "poni")
         );
     }
 
 }
+
